@@ -21,16 +21,16 @@ body {
 }
 
 .card {
-    width: 25vw;
+    width: 30vw;
     border-radius: 15px;
-    border: 1px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .card-img {
     width: 100%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 .card-content {
@@ -46,7 +46,8 @@ body {
 
 .title {
     text-align: center;
-    margin: 0.75em;
+    margin: 0.25em 0.5em;
+    padding: 1em;
 }
 
 .title h1 {
@@ -55,23 +56,60 @@ body {
 }
 
 .title p {
-    color: var(--Desaturatedblue)
+    color: var(--Desaturatedblue);
+    font-size: 1em;
+    margin-bottom: 0;
 }
 
 .content {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     background-color: var(--veryPaleBlue);
     padding: 0.5em 1.25em;
     border-radius: 1em;
+    margin: 0 0 1em 0;
+    width: 70%;
+}
+
+.ico {
+    flex: 1;
     margin: 0;
+}
+
+.ico img {
+    width: 2.5em;
 }
 
 .media {
     display: flex;
     flex-direction: column;
-    margin: 1em;
+    margin: 1em 1em 1em 0;
+    flex: 2;
+}
+
+.media p {
+    margin: 0.15em;
+    padding: 0;
+    font-size: 1em;
+}
+
+#plan {
+    color: var(--Darkblue);
+}
+
+#price {
+    color: var(--Desaturatedblue);
+}
+
+.change {
+    flex: 1;    
+}
+
+.change a {
+    font-size: 0.8em;
+    color: var(--brightBlue);
+    text-decoration: none;
 }
 
 .footer {
@@ -85,22 +123,41 @@ body {
 #pay {
     color: var(--veryPaleBlue);
     font-family: 'Red Hat Display', sans-serif;
-    font-size: 0.85em;
-    padding: 0.5em 4.5em;
+    font-size: 1em;
+    padding: 1em 5.5em;
     background-color: var(--brightBlue);
     border-radius: 10px;
     border: none;
     margin-bottom: 1em;
-    box-shadow: 0px 10px gray;
+    box-shadow: 0px 15px 10px var(--paleBlue);
+    cursor: pointer;
 }
 
 #cancel {
     font-family: 'Red Hat Display', sans-serif;
-    font-size: 0.85em;
-    padding: 0.5em 4.5em;
-    background-color: white;
+    font-size: 1em;
+    padding: 1em 5.5em;
+    background-color: transparent;
     color: var(--Desaturatedblue);
     border-radius: 10px;
     border: none;
     margin-bottom: 1em;
+    cursor: pointer;
 }
+
+
+/* Active State */
+#cancel:hover {
+    color: var(--Darkblue);
+}
+
+#pay:hover {
+    color: var(--Darkblue);
+    background-color: var(--Desaturatedblue);
+}
+
+.change a:hover {
+    color: var(--Desaturatedblue);
+}
+
+/* Responsive */
