@@ -1,0 +1,106 @@
+/* Default Settings */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* Variable */
+
+:root {
+    --paleBlue: hsl(225, 100%, 94%);
+    --brightBlue: hsl(245, 75%, 52%);
+    --veryPaleBlue: hsl(225, 100%, 98%);
+    --Desaturatedblue: hsl(224, 23%, 55%);
+    --Darkblue: hsl(223, 47%, 23%);
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+    display: flex; /* experimental */
+    justify-content: center; /* experimental */
+    align-items: center;
+}
+
+.card {
+    width: 25vw;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+.card-img {
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-bottom: 0;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-top: 0;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.title {
+    text-align: center;
+    margin: 0.75em;
+}
+
+.title h1 {
+    margin-bottom: 0.5em;
+    color: var(--Darkblue);
+}
+
+.title p {
+    color: var(--Desaturatedblue)
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--veryPaleBlue);
+    padding: 0.5em 1.25em;
+    border-radius: 1em;
+    margin: 0;
+}
+
+.media {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+}
+
+#pay {
+    color: var(--veryPaleBlue);
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 0.85em;
+    padding: 0.5em 4.5em;
+    background-color: var(--brightBlue);
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 1em;
+    box-shadow: 0px 10px gray;
+}
+
+#cancel {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 0.85em;
+    padding: 0.5em 4.5em;
+    background-color: white;
+    color: var(--Desaturatedblue);
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 1em;
+}
