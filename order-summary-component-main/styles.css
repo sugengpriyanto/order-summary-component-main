@@ -13,6 +13,10 @@
 }
 
 body {
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-position: top;
+    background-size: auto;
+    background-repeat: no-repeat;
     font-size: 16px;
     font-family: 'Red Hat Display', sans-serif;
     display: flex; /* experimental */
@@ -162,6 +166,12 @@ body {
 
 /* Responsive */
 @media screen and (max-width: 400px) {
+    body {
+        background: url("./images/pattern-background-mobile.svg");
+        background-size: contain;
+        background-position: center;
+        background-repeat: repeat-y;
+    }
     .card {
         width: 90vw;
         border-radius: 15px;
